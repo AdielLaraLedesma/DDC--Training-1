@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Gestion</title>
+    <link href="~/CSS/_LayoutGestionCSS.css?=."time() rel="stylesheet" type="text/css"/>
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <button>CARADMIN</button>
+            <!--<button>Configuracion</button>-->
+            <ul>
+                <li><a>Configuracion</a>
+                    <ul>
+                        <li><a href="@Url.Action("Index","Institucion")">Instituciones</a></li>
+                        <li><a href="@Url.Action("Index","Tarjeta")">Tarjetas</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

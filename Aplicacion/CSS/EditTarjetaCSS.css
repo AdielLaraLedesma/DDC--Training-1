@@ -1,0 +1,19 @@
+﻿body .ventanaEdit {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid;
+    border-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+    body .ventanaEdit .header {
+        background-color: #335FEE;
+        text-align: center;
+        height: 10%;
+    }
+
+    body .ventanaEdit .container {
+        height: 90%;
+    }

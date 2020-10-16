@@ -1,0 +1,26 @@
+﻿body table {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+    body table tr th {
+        width: 20%;
+        background-color: #335EFF;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    body table tr td {
+        width: 20%;
+        background-color: #889CE6;
+        color: #000;
+    }
+
+        body table tr td a i{
+            color: #fff;
+        }
+
+        body table tr td a i{
+            margin: 8px;
+        }

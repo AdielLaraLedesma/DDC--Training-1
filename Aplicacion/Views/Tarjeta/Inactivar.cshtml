@@ -1,0 +1,51 @@
+﻿@model Aplicacion.Models.Tarjeta
+
+@{
+    ViewBag.Title = "Inactivar";
+    Layout = "~/Views/Shared/_LayoutGestion.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Inactivar</title>
+    <link href="~/CSS/InactivarInstitucionCSS.css?=." time() rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="ventanaInactivar">
+        <div class="header">
+            Inactivar Institucion
+        </div>
+        <div class="container">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Numero)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Numero)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Institucion_ID)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Institucion_ID)
+                </dd>
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Inactivar" class="btn btn-default" /> 
+                </div>
+            }
+        </div>
+    </div>
+</body>
+</html>
